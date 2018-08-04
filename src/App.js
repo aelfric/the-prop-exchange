@@ -1,7 +1,7 @@
 import 'materialize-css/dist/js/materialize.min.js';
 import 'materialize-css/dist/css/materialize.min.css';
 
-import MaterialIcon from 'material-icons-react';
+import MaterialIcon, {colorPalette} from 'material-icons-react';
 
 
 import React, { Component } from 'react';
@@ -46,11 +46,12 @@ class App extends Component {
         <nav>
     <div className="nav-wrapper  purple darken-4">
       <a href="#" className="brand-logo center">The Paper Prop Exchange</a>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><a href="#">Shows</a></li>
-        <li><a href="#">Props</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+      <form>
+        <div className="input-field">
+          <input id="search" type="search" required />
+          <label className="label-icon" htmlFor="search"><MaterialIcon icon="search" color="inherit" /></label>
+        </div>
+      </form>
     </div>
   </nav>
       <div className="container">
